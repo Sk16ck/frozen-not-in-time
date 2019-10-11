@@ -1,3 +1,76 @@
 html {
+  font-family: "Fredoka One", sans-serif;
+}
 
+h1 {
+  color: #990073;
+  position: relative;
+  left: -0.5em;
+  /* play w this */
+  filter: blur(12px);
+  opacity: 0;
+  transform: rotate(-30deg);
+  /* play w to see why it happens this way */
+  transform-origin: left center;
+
+  animation:
+}
+
+p {
+  color: #c09;
+  max-width: 19em;
+}
+
+.background {
+  background-image: repeating-linear-gradient(-33deg, #c9fcff 0%, #c9fcff 1%,  #d4fdff 1.1%, #d4fdff 2%, #c9fcff 2.1%);
+  border-top: #b3fbff 5px solid;
+  border-bottom: #b3fbff 5px solid;
+}
+
+.btn {
+  color: #c09;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.btn-ghost {
+  border-color: #990073;
+}
+
+.btn-ghost:hover {
+  background-color: #990073;
+}
+
+.ice-cream {
+  min-height: 480px;
+}
+
+.mint {
+
+}
+
+.chocolate {
+
+}
+
+.vanilla {
+
+}
+
+.cherry {
+
+}
+
+.cone {
+
+}
+
+.scoop {
+  bottom: 100%
+  left 50%;
+  height: 180px;
+  width: 180px;
+
+  transform: translateX(-50%);
 }
