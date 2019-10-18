@@ -5,15 +5,15 @@ html {
 h1 {
   color: #990073;
   position: relative;
-  left: -0.5em;
+  left: -.5em;
+
   /* play w this */
   filter: blur(12px);
-  opacity: 0;
+  opacity: 100;
   transform: rotate(-30deg);
+
   /* play w to see why it happens this way */
   transform-origin: left center;
-
-  animation:
 }
 
 p {
@@ -46,31 +46,118 @@ p {
   min-height: 480px;
 }
 
-.mint {
+.ingredient {
+  /* sizing and positioning */
+  width: 150px;
+  height: 150px;
+  bottom: 100%;
+  left: 50%;
 
+  transform: translateX(-50%);
 }
 
-.chocolate {
+.ingredient2 {
+  /* sizing and positioning */
+  width: 115px;
+  height: 115px;
+  bottom: 100%;
+  left: 50%;
 
+  transform: translateX(-50%);
 }
 
-.vanilla {
+.ingredient3 {
+  /* sizing and positioning */
+  width: 70px;
+  height: 70px;
+  bottom: 100%;
+  left: 50%;
 
-}
-
-.cherry {
-
+  transform: translateX(-50%);
 }
 
 .cone {
+  /* Values subject to change */
+  animation: conefall .3s ease-in forwards;
+  z-index: 5;
+}
+
+.mint {
+  animation: mintfall .3s .3s ease-in forwards;
+  z-index: 2;
+}
+
+.chocolate {
+  animation: chocfall .3s .6s ease-in forwards;
+  z-index: 3;
+}
+
+.vanilla {
+  animation: vanfall .3s .9s ease-in forwards;
+  z-index: 4;
+}
+
+.cherry {
+  animation: cherryfall .3s 1.2s ease-in forwards;
+  z-index: 6;
+}
+
+@keyframes conefall {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
 
 }
 
-.scoop {
-  bottom: 100%
-  left 50%;
-  height: 180px;
-  width: 180px;
+@keyframes mintfall {
 
-  transform: translateX(-50%);
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 109px;
+  }
+
+}
+
+@keyframes chocfall {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 199px;
+  }
+
+}
+
+@keyframes vanfall {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 265px;
+  }
+
+}
+
+@keyframes cherryfall {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 360px;
+  }
+
 }
