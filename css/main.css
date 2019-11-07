@@ -19,10 +19,11 @@ h1 {
 p {
   color: #c09;
   max-width: 19em;
+  text-shadow: 2px 2px #990073;
 }
 
 .background {
-  background-image: repeating-linear-gradient(-33deg, #c9fcff 0%, #c9fcff 1%,  #d4fdff 1.1%, #d4fdff 2%, #c9fcff 2.1%);
+  background-image: repeating-linear-gradient(-33deg, #c9fcff 0%, #c9fcff 1%, #d4fdff 1.1%, #d4fdff 2%, #c9fcff 2.1%);
   border-top: #b3fbff 5px solid;
   border-bottom: #b3fbff 5px solid;
 }
